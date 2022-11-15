@@ -26,31 +26,18 @@ object build {
     )
   }
 
-  val mavenCentralFrouFrou = Seq(
-    publishTo := sonatypePublishToBundle.value,
-    homepage := Some(new URL("https://github.com/json4s/json4s")),
-    startYear := Some(2009),
-    licenses := Seq(("Apache-2.0", new URL("http://www.apache.org/licenses/LICENSE-2.0"))),
-    pomExtra := {
-      pomExtra.value ++ Group(
-        <scm>
-        <url>https://github.com/json4s/json4s</url>
-        <connection>scm:git:git://github.com/json4s/json4s.git</connection>
-      </scm>
-      <developers>
-        <developer>
-          <id>casualjim</id>
-          <name>Ivan Porto Carrero</name>
-          <url>http://flanders.co.nz/</url>
-        </developer>
-        <developer>
-          <id>seratch</id>
-          <name>Kazuhiro Sera</name>
-          <url>http://git.io/sera</url>
-        </developer>
-      </developers>
-      )
-    }
+  lazy val publishOpts = Seq(
+    // settings
+    credentials += Credentials(Path.userHome / ".ivy2" / "credentials"),
+    publishConfiguration := publishConfiguration.value.withOverwrite(true),
+    publishMavenStyle := true,
+    Test / publishArtifact := false,
+    pomIncludeRepository := { _ => false },
+    ThisBuild / publishTo := Some(
+      "Artifactory Realm"
+        .at("http://tookitaki-artifacts.tookitaki.com/artifactory/tookitaki-releases")
+        .withAllowInsecureProtocol(true)
+    )
   )
 
   val Scala211 = "2.11.12"
@@ -58,7 +45,7 @@ object build {
   val Scala213 = "2.13.8"
   val Scala3 = "3.1.1"
 
-  def json4sSettings(cross: Boolean) = mavenCentralFrouFrou ++ Def.settings(
+  def json4sSettings(cross: Boolean) = publishOpts ++ Def.settings(
     mimaSettings,
     organization := "com.tt.json4s",
     scalaVersion := Scala212,

@@ -1,6 +1,6 @@
-# JSON4S [![Maven Central](https://img.shields.io/maven-central/v/com.tt.json4s/json4s-core_2.12.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:com.tt.json4s%20AND%20a:json4s-core_2.12)
+# JSON4S
 
-[![Join the chat at https://gitter.im/json4s/json4s](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/json4s/json4s?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+**IMPORTANT : This is a custom release for Tookitaki to resolve JSON4S conflicts with Spark and Scalatra versions** 
 
 At this moment there are at least 6 json libraries for scala, not counting the java json libraries.
 All these libraries have a very similar AST. This project aims to provide a single AST to be used by other scala
