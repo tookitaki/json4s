@@ -1,0 +1,3 @@
+package com.tookitaki.json4s.ext
+
+class JacksonJavaEnumNameSerializerSpec extends JavaEnumNameSerializerSpec(jackson.Serialization)

@@ -1,4 +1,4 @@
-package com.tt.json4s
+package com.tookitaki.json4s
 
 /**
  * Stub implementation of the trait scala.collection.immutable.Map

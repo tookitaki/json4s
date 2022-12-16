@@ -27,7 +27,7 @@ val excludeTests = Set(
   "native.LazyValBugs",
   "native.NativeSerializationSpec",
   "reflect.ReflectorSpec",
-).map("com.tt.json4s." + _)
+).map("com.tookitaki.json4s." + _)
 
 ThisBuild / Test / testOptions ++= {
   if (scalaBinaryVersion.value == "3") {

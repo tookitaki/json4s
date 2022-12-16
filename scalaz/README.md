@@ -17,8 +17,8 @@ Simple example
 
     scala> import scalaz._
     scala> import Scalaz._
-    scala> import com.tt.json4s.scalaz.JsonScalaz._
-    scala> import com.tt.json4s._
+    scala> import com.tookitaki.json4s.scalaz.JsonScalaz._
+    scala> import com.tookitaki.json4s._
 
     scala> case class Address(street: String, zipCode: String)
     scala> case class Person(name: String, age: Int, address: Address)
@@ -74,7 +74,7 @@ Installation
 
 Add dependency to your SBT project description:
 
-    val json4s_scalaz = "com.tt.json4s" %% "json4s-scalaz" % "XXX"
+    val json4s_scalaz = "com.tookitaki.json4s" %% "json4s-scalaz" % "XXX"
 
 Links
 -----

@@ -1,4 +1,4 @@
-package com.tt.json4s
+package com.tookitaki.json4s
 
 final class SomeValue[A](val get: A) extends AnyVal {
 

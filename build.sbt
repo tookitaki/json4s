@@ -35,7 +35,7 @@ lazy val ast = crossProject(JVMPlatform, JSPlatform, NativePlatform)
       }
     },
     buildInfoKeys := Seq[BuildInfoKey](name, organization, version, scalaVersion, sbtVersion),
-    buildInfoPackage := "com.tt.json4s",
+    buildInfoPackage := "com.tookitaki.json4s",
   )
   .enablePlugins(BuildInfoPlugin)
   .nativeSettings(
@@ -206,7 +206,7 @@ lazy val core = project
     json4sSettings(cross = false),
     libraryDependencies ++= Seq(Dependencies.paranamer),
     Test / console / initialCommands := """
-        |import com.tt.json4s._
+        |import com.tookitaki.json4s._
         |import reflect._
       """.stripMargin,
   )
@@ -345,7 +345,7 @@ lazy val tests = project
     disableScala3, // TODO
     Test / console / initialCommands :=
       """
-        |import com.tt.json4s._
+        |import com.tookitaki.json4s._
         |import reflect._
       """.stripMargin,
   )
