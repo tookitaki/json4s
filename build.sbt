@@ -312,3 +312,28 @@ addCommandAlias(
   Seq("astJVM", "scalap", "xmlJVM", "core", "nativeCoreJVM", "native", "ext", "jacksonCore", "jackson", "scalazJVM", "tests")
     .map(_ + "/test").mkString(";", ";", "")
 )
+
+// Tookitaki: one combined jar with the 8 JVM modules FinCense uses, published as
+// com.tookitaki.shaded:org.json4s_<scala>:<version> -> org.json4s_2.12-4.0.7-shaded.jar.
+// The modules are compile-internal (classes copied in, not listed in the pom); the pom lists only the outside
+// dependencies the modules need: jackson-databind (jackson-core), paranamer (core), scala-xml (xml).
+lazy val bundledModules = Seq[ProjectReference](astJVM, scalap, xmlJVM, core, nativeCoreJVM, native, jacksonCore, jackson)
+lazy val bundle = project
+  .in(file("bundle"))
+  .dependsOn(bundledModules.map(p => ClasspathDependency(p, Some("compile-internal"))): _*)
+  .settings(
+    json4sSettings(cross = false),
+    organization := "com.tookitaki.shaded",
+    name := "org.json4s",
+    moduleName := "org.json4s", // keep the dot (sbt would normalise it to org-json4s)
+    crossScalaVersions := Seq(build.Scala212, build.Scala213),
+    libraryDependencies ++= Seq(
+      "com.fasterxml.jackson.core" % "jackson-databind" % "2.15.3",
+      Dependencies.paranamer,
+      Dependencies.scalaXml.value
+    ),
+    mimaPreviousArtifacts := Set.empty,
+    Compile / packageBin / mappings ++= (Compile / packageBin / mappings).all(ScopeFilter(inProjects(bundledModules: _*))).value.flatten,
+    Compile / packageSrc / mappings ++= (Compile / packageSrc / mappings).all(ScopeFilter(inProjects(bundledModules: _*))).value.flatten,
+    Compile / packageDoc / publishArtifact := false
+  )
