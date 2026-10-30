@@ -1,11 +1,11 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 package native
 
-import org.json4s.JsonAST.JField
-import org.json4s.native.Document._
-import org.json4s.prefs.EmptyValueStrategy
+import com.tookitaki.shaded.org.json4s.JsonAST.JField
+import com.tookitaki.shaded.org.json4s.native.Document._
+import com.tookitaki.shaded.org.json4s.prefs.EmptyValueStrategy
 
-trait JsonMethods extends org.json4s.JsonMethods[Document] {
+trait JsonMethods extends com.tookitaki.shaded.org.json4s.JsonMethods[Document] {
 
   def parse[A: AsJsonInput](in: A, useBigDecimalForDouble: Boolean = false, useBigIntForLong: Boolean = true): JValue =
     JsonParser.parse(in, useBigDecimalForDouble = useBigDecimalForDouble, useBigIntForLong = useBigIntForLong)

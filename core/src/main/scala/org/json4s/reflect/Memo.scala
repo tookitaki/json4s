@@ -1,4 +1,4 @@
-package org.json4s.reflect
+package com.tookitaki.shaded.org.json4s.reflect
 
 import java.util.concurrent.ConcurrentHashMap
 

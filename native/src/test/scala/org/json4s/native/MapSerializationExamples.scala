@@ -1,9 +1,9 @@
-package org.json4s.native
+package com.tookitaki.shaded.org.json4s.native
 
 import org.scalatest.wordspec.AnyWordSpec
-import org.json4s._
-import org.json4s.native.Serialization.{read, write => swrite}
-import org.json4s.native
+import com.tookitaki.shaded.org.json4s._
+import com.tookitaki.shaded.org.json4s.native.Serialization.{read, write => swrite}
+import com.tookitaki.shaded.org.json4s.native
 import java.util.{GregorianCalendar, Date}
 import java.sql.Timestamp
 

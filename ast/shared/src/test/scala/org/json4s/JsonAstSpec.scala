@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
-import org.json4s.MonadicJValue._
-import org.json4s.JsonAST._
+import com.tookitaki.shaded.org.json4s.MonadicJValue._
+import com.tookitaki.shaded.org.json4s.JsonAST._
 import org.scalatest.wordspec.AnyWordSpec
 import org.scalatestplus.scalacheck.Checkers
 import org.scalacheck._

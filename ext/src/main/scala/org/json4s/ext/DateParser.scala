@@ -1,8 +1,8 @@
-package org.json4s.ext
+package com.tookitaki.shaded.org.json4s.ext
 
 import java.util.TimeZone
 
-import org.json4s.{Formats, MappingException}
+import com.tookitaki.shaded.org.json4s.{Formats, MappingException}
 
 object DateParser {
 

@@ -26,8 +26,14 @@ object build {
     )
   }
 
+  // Tookitaki build: upstream json4s 4.0.7 with the package renamed to com.tookitaki.shaded.org.json4s, published to
+  // Tookitaki's Artifactory (see TOOKITAKI-NOTICE.md). Nothing else in the code changed.
   val mavenCentralFrouFrou = Seq(
-    publishTo := sonatypePublishToBundle.value,
+    credentials += Credentials(Path.userHome / ".ivy2" / "credentials"),
+    publishMavenStyle := true,
+    Test / publishArtifact := false,
+    pomIncludeRepository := { _ => false },
+    publishTo := Some("Artifactory Realm".at("https://tookitaki-artifacts.tookitaki.com/artifactory/tookitaki-releases")),
     homepage := Some(new URL("https://github.com/json4s/json4s")),
     startYear := Some(2009),
     licenses := Seq(("Apache-2.0", new URL("http://www.apache.org/licenses/LICENSE-2.0"))),
@@ -59,7 +65,7 @@ object build {
 
   def json4sSettings(cross: Boolean) = mavenCentralFrouFrou ++ Def.settings(
     mimaSettings,
-    organization := "org.json4s",
+    organization := "com.tookitaki.shaded.org.json4s",
     scalaVersion := Scala212,
     crossScalaVersions := Seq(Scala212, Scala213, Scala3),
     addCommandAlias("SetScala212", s"++ ${Scala212}!"),

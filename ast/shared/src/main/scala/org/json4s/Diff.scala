@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 import JsonAST._
 
@@ -105,11 +105,11 @@ object Diff {
     diffRec(vs1, vs2)
   }
 
-  private[json4s] trait Diffable { this: org.json4s.JValue =>
+  private[json4s] trait Diffable { this: com.tookitaki.shaded.org.json4s.JValue =>
 
     /**
      * Return a diff.
-     * @see org.json4s.Diff#diff
+     * @see com.tookitaki.shaded.org.json4s.Diff#diff
      */
     def diff(other: JValue): Diff = Diff.diff(this, other)
   }

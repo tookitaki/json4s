@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 import org.scalatest.wordspec.AnyWordSpec
-import org.json4s.native.Document
-import org.json4s.MonadicJValue._
+import com.tookitaki.shaded.org.json4s.native.Document
+import com.tookitaki.shaded.org.json4s.MonadicJValue._
 
 class NativeXmlExamples extends XmlExamples[Document]("Native") with native.JsonMethods
 

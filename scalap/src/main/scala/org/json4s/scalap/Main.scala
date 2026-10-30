@@ -5,7 +5,7 @@
 **
  */
 
-package org.json4s.scalap
+package com.tookitaki.shaded.org.json4s.scalap
 
 object Main {
   val SCALA_SIG = "ScalaSig"

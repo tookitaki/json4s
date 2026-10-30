@@ -1,7 +1,7 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 import scala.collection.mutable.ListBuffer
-import org.json4s.JsonAST._
+import com.tookitaki.shaded.org.json4s.JsonAST._
 
 object JsonWriter {
   def ast: JsonWriter[JValue] = new JDoubleAstRootJsonWriter

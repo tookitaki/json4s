@@ -1,4 +1,4 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 package jackson
 
 import scala.reflect.Manifest
@@ -18,7 +18,7 @@ object Serialization extends JacksonSerialization(JsonMethods)
  * implicit val formats: Formats = Serialization.formats(hints)
  * </pre>
  *
- * @see org.json4s.TypeHints
+ * @see com.tookitaki.shaded.org.json4s.TypeHints
  */
 class JacksonSerialization(jsonMethods: JsonMethods) extends Serialization {
   import java.io.{Reader, Writer}

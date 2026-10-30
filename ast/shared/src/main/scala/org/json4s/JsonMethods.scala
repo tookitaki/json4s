@@ -1,6 +1,6 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
-import org.json4s.prefs.EmptyValueStrategy
+import com.tookitaki.shaded.org.json4s.prefs.EmptyValueStrategy
 
 trait JsonMethods[T] {
 

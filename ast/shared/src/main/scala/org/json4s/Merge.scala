@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 import JsonAST._
 
@@ -110,7 +110,7 @@ object Merge {
 
     /**
      * Return merged JSON.
-     * @see org.json4s.Merge#merge
+     * @see com.tookitaki.shaded.org.json4s.Merge#merge
      */
     def merge[B <: JValue, R <: JValue](other: B)(implicit instance: MergeDep[A, B, R]): R =
       Merge.merge(json, other)(instance)

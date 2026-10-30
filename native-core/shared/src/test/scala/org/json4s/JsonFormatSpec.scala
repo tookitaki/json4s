@@ -1,6 +1,6 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
-import org.json4s.native.Document
+import com.tookitaki.shaded.org.json4s.native.Document
 import org.scalatest.wordspec.AnyWordSpec
 
 class NativeJsonFormatSpec extends JsonFormatSpec[Document]("native") with native.JsonMethods

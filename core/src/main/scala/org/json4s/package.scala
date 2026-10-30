@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org
+package com.tookitaki.shaded.org
 
 package object json4s {
 

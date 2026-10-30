@@ -1,6 +1,6 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
-import org.json4s.jackson.{JsonMethods, Serialization}
+import com.tookitaki.shaded.org.json4s.jackson.{JsonMethods, Serialization}
 import org.scalatest.wordspec.AnyWordSpec
 
 class TypeHintTest extends AnyWordSpec {

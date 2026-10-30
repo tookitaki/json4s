@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 import org.scalatest.wordspec.AnyWordSpec
 import org.scalatestplus.scalacheck.Checkers
 import org.scalacheck.Arbitrary
-import org.json4s.native.Document
+import com.tookitaki.shaded.org.json4s.native.Document
 
 //import NativeImports._
 //import JsonMethods._

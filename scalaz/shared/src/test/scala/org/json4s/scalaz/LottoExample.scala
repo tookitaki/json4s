@@ -1,8 +1,8 @@
-package org.json4s.scalaz
+package com.tookitaki.shaded.org.json4s.scalaz
 
 import scalaz._
 import JsonScalaz._
-import org.json4s.native
+import com.tookitaki.shaded.org.json4s.native
 import native.JsonMethods._
 
 import org.scalatest.wordspec.AnyWordSpec

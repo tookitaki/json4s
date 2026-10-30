@@ -1,13 +1,13 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 package native
 
 import org.scalatest.wordspec.AnyWordSpec
-import org.json4s.prefs.EmptyValueStrategy
-import org.json4s.MonadicJValue._
+import com.tookitaki.shaded.org.json4s.prefs.EmptyValueStrategy
+import com.tookitaki.shaded.org.json4s.MonadicJValue._
 
 class NativeJsonMethodsSpec extends AnyWordSpec {
 
-  import org.json4s.JsonDSL._
+  import com.tookitaki.shaded.org.json4s.JsonDSL._
   import JsonMethods._
 
   "JsonMethods.parse" should {

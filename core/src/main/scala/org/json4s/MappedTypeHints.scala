@@ -1,4 +1,4 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 /**
  * Use a map of keys as type hints.  Values may not be mapped by multiple keys

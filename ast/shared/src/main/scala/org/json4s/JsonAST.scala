@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 object JsonAST {
 
@@ -27,27 +27,27 @@ object JsonAST {
    */
   def concat(xs: JValue*): JValue = xs.foldLeft(JNothing: JValue)(_ ++ _)
 
-  type JValue = org.json4s.JValue
-  val JNothing = org.json4s.JNothing
-  val JNull = org.json4s.JNull
-  type JString = org.json4s.JString
-  val JString = org.json4s.JString
-  type JDouble = org.json4s.JDouble
-  val JDouble = org.json4s.JDouble
-  type JDecimal = org.json4s.JDecimal
-  val JDecimal = org.json4s.JDecimal
-  type JLong = org.json4s.JLong
-  val JLong = org.json4s.JLong
-  type JInt = org.json4s.JInt
-  val JInt = org.json4s.JInt
-  type JBool = org.json4s.JBool
-  val JBool = org.json4s.JBool
+  type JValue = com.tookitaki.shaded.org.json4s.JValue
+  val JNothing = com.tookitaki.shaded.org.json4s.JNothing
+  val JNull = com.tookitaki.shaded.org.json4s.JNull
+  type JString = com.tookitaki.shaded.org.json4s.JString
+  val JString = com.tookitaki.shaded.org.json4s.JString
+  type JDouble = com.tookitaki.shaded.org.json4s.JDouble
+  val JDouble = com.tookitaki.shaded.org.json4s.JDouble
+  type JDecimal = com.tookitaki.shaded.org.json4s.JDecimal
+  val JDecimal = com.tookitaki.shaded.org.json4s.JDecimal
+  type JLong = com.tookitaki.shaded.org.json4s.JLong
+  val JLong = com.tookitaki.shaded.org.json4s.JLong
+  type JInt = com.tookitaki.shaded.org.json4s.JInt
+  val JInt = com.tookitaki.shaded.org.json4s.JInt
+  type JBool = com.tookitaki.shaded.org.json4s.JBool
+  val JBool = com.tookitaki.shaded.org.json4s.JBool
   type JField = (String, JValue)
-  val JField = org.json4s.JField
-  type JObject = org.json4s.JObject
-  val JObject = org.json4s.JObject
-  type JArray = org.json4s.JArray
-  val JArray = org.json4s.JArray
-  type JSet = org.json4s.JSet
-  val JSet = org.json4s.JSet
+  val JField = com.tookitaki.shaded.org.json4s.JField
+  type JObject = com.tookitaki.shaded.org.json4s.JObject
+  val JObject = com.tookitaki.shaded.org.json4s.JObject
+  type JArray = com.tookitaki.shaded.org.json4s.JArray
+  val JArray = com.tookitaki.shaded.org.json4s.JArray
+  type JSet = com.tookitaki.shaded.org.json4s.JSet
+  val JSet = com.tookitaki.shaded.org.json4s.JSet
 }

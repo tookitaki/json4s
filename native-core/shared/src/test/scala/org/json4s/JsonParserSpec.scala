@@ -1,6 +1,6 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
-import org.json4s.ParserUtil.ParseException
+import com.tookitaki.shaded.org.json4s.ParserUtil.ParseException
 import org.scalatest.wordspec.AnyWordSpec
 import org.scalatestplus.scalacheck.Checkers
 import org.scalacheck.{Arbitrary, Gen}

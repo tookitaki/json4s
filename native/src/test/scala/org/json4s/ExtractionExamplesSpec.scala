@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 import java.util.Date
-import org.json4s
+import com.tookitaki.shaded.org.json4s
 
 import org.scalatest.wordspec.AnyWordSpec
-import org.json4s.native.Document
-import org.json4s.prefs.ExtractionNullStrategy
+import com.tookitaki.shaded.org.json4s.native.Document
+import com.tookitaki.shaded.org.json4s.prefs.ExtractionNullStrategy
 import scala.reflect.ClassTag
 
 class NativeExtractionExamples
@@ -508,7 +508,7 @@ abstract class ExtractionExamples[T](mod: String, ser: json4s.Serialization) ext
       } catch {
         case e: MappingException =>
           assert(
-            e.getMessage == "No usable value for address\nDid not find value which can be converted into org.json4s.Address"
+            e.getMessage == "No usable value for address\nDid not find value which can be converted into com.tookitaki.shaded.org.json4s.Address"
           )
       }
     }
@@ -574,7 +574,7 @@ abstract class ExtractionExamples[T](mod: String, ser: json4s.Serialization) ext
       } catch {
         case e: MappingException =>
           assert(
-            e.getMessage == "No usable value for address\nDid not find value which can be converted into org.json4s.Address"
+            e.getMessage == "No usable value for address\nDid not find value which can be converted into com.tookitaki.shaded.org.json4s.Address"
           )
       }
     }

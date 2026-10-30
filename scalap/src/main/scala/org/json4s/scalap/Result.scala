@@ -10,7 +10,7 @@
 //
 // -----------------------------------------------------------------------------
 
-package org.json4s.scalap
+package com.tookitaki.shaded.org.json4s.scalap
 
 /**
  * Represents the combined value of two rules applied in sequence.

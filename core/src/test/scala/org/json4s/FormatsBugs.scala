@@ -1,7 +1,7 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
-import org.json4s.prefs.ExtractionNullStrategy
-import org.json4s.prefs.ExtractionNullStrategy.Disallow
+import com.tookitaki.shaded.org.json4s.prefs.ExtractionNullStrategy
+import com.tookitaki.shaded.org.json4s.prefs.ExtractionNullStrategy.Disallow
 import org.scalatest.wordspec.AnyWordSpec
 
 class FormatsBugs extends AnyWordSpec {

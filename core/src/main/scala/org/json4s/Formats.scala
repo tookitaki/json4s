@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 import reflect.ScalaType
 
 import java.lang.reflect.Type
 
-import org.json4s.prefs.EmptyValueStrategy
-import org.json4s.prefs.ExtractionNullStrategy
+import com.tookitaki.shaded.org.json4s.prefs.EmptyValueStrategy
+import com.tookitaki.shaded.org.json4s.prefs.ExtractionNullStrategy
 
 import scala.annotation.implicitNotFound
 
@@ -83,11 +83,11 @@ object Formats {
  * Formats to use when converting JSON.
  * Formats are usually configured by using an implicit parameter:
  * <pre>
- * implicit val formats: Formats = org.json4s.DefaultFormats
+ * implicit val formats: Formats = com.tookitaki.shaded.org.json4s.DefaultFormats
  * </pre>
  */
 @implicitNotFound(
-  "No org.json4s.Formats found. Try to bring an instance of org.json4s.Formats in scope or use the org.json4s.DefaultFormats."
+  "No com.tookitaki.shaded.org.json4s.Formats found. Try to bring an instance of com.tookitaki.shaded.org.json4s.Formats in scope or use the com.tookitaki.shaded.org.json4s.DefaultFormats."
 )
 trait Formats extends Serializable { self: Formats =>
   def dateFormat: DateFormat

@@ -1,8 +1,8 @@
-package org.json4s.reflect
+package com.tookitaki.shaded.org.json4s.reflect
 
 import java.lang.reflect.{Field, TypeVariable}
 
-import org.json4s.{JArray, JObject, JValue}
+import com.tookitaki.shaded.org.json4s.{JArray, JObject, JValue}
 
 object ScalaType {
 

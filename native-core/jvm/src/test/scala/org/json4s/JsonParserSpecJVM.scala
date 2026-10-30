@@ -1,7 +1,7 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 import org.scalatest.wordspec.AnyWordSpec
-import org.json4s.native.JsonMethods.parse
+import com.tookitaki.shaded.org.json4s.native.JsonMethods.parse
 
 class JsonParserSpecJVM extends AnyWordSpec {
   "Parsing is thread safe" in {

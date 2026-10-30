@@ -1,4 +1,4 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 import org.scalatest.wordspec.AnyWordSpec
 
@@ -165,10 +165,10 @@ abstract class SerializationSpec(serialization: Serialization, baseFormats: Form
         // val actual = Extraction.extract[MyModel](jackson.parseJson(json))
         // actual must_== expected
         /*
-        [error] Caused by org.json4s.package$MappingException: Do not know how to convert JObject(List((id,JString(alice)))) into class java.lang.String
-        [error] org.json4s.reflect.package$.fail(package.scala:93)
-        [error] org.json4s.Extraction$.convert(Extraction.scala:676)
-        [error] org.json4s.Extraction$.extract(Extraction.scala:388)
+        [error] Caused by com.tookitaki.shaded.org.json4s.package$MappingException: Do not know how to convert JObject(List((id,JString(alice)))) into class java.lang.String
+        [error] com.tookitaki.shaded.org.json4s.reflect.package$.fail(package.scala:93)
+        [error] com.tookitaki.shaded.org.json4s.Extraction$.convert(Extraction.scala:676)
+        [error] com.tookitaki.shaded.org.json4s.Extraction$.extract(Extraction.scala:388)
          */
       }
 
@@ -203,7 +203,7 @@ abstract class SerializationSpec(serialization: Serialization, baseFormats: Form
         implicit val formats: Formats = DefaultFormats.skippingEmptyValues + FieldSerializer[AttributesT]()
 
         val expected = Foo("test")
-        val json = org.json4s.native.Serialization.writePretty(expected)
+        val json = com.tookitaki.shaded.org.json4s.native.Serialization.writePretty(expected)
 
         val actual = Extraction.extract[Foo](jackson.parseJson(json))
         assert(actual == expected)

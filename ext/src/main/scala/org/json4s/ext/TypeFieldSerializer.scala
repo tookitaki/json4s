@@ -1,8 +1,8 @@
-package org.json4s.ext
+package com.tookitaki.shaded.org.json4s.ext
 
-import org.json4s.{JField, JObject, JString}
-import org.json4s.reflect.{Reflector, ScalaType}
-import org.json4s.{CustomSerializer, DefaultFormats, Extraction, Formats, JValue, NoTypeHints}
+import com.tookitaki.shaded.org.json4s.{JField, JObject, JString}
+import com.tookitaki.shaded.org.json4s.reflect.{Reflector, ScalaType}
+import com.tookitaki.shaded.org.json4s.{CustomSerializer, DefaultFormats, Extraction, Formats, JValue, NoTypeHints}
 
 class TypeFieldSerializer[T: Manifest](fieldName: String, mapping: Map[String, Class[_ <: T]])
   extends CustomSerializer[T](fm => {

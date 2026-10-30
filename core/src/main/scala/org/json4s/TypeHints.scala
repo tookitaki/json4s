@@ -1,4 +1,4 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 /**
  * Type hints can be used to alter the default conversion rules when converting

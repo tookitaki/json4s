@@ -1,4 +1,4 @@
-package org.json4s.reflect
+package com.tookitaki.shaded.org.json4s.reflect
 
 import com.thoughtworks.paranamer.{BytecodeReadingParanamer, CachingParanamer}
 

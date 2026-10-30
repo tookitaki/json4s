@@ -1,4 +1,4 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 private[json4s] object ClassDelta {
   def delta(class1: Class[_], class2: Class[_]): Int = {

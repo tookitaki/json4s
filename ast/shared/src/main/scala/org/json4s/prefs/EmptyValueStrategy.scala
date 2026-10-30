@@ -1,6 +1,6 @@
-package org.json4s.prefs
+package com.tookitaki.shaded.org.json4s.prefs
 
-import org.json4s.{JValue, JArray, JField, JObject, JNothing, JNull}
+import com.tookitaki.shaded.org.json4s.{JValue, JArray, JField, JObject, JNothing, JNull}
 
 /**
  * Strategies for empty values treatment.

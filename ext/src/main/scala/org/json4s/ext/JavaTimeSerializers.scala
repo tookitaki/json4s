@@ -1,9 +1,9 @@
-package org.json4s.ext
+package com.tookitaki.shaded.org.json4s.ext
 
 import java.time._
 import java.util.{Date, TimeZone}
 
-import org.json4s._
+import com.tookitaki.shaded.org.json4s._
 
 object JavaTimeSerializers {
 

@@ -1,10 +1,10 @@
-package org.json4s.jackson
+package com.tookitaki.shaded.org.json4s.jackson
 
 import com.fasterxml.jackson.databind.{DeserializationFeature, DeserializationContext, JsonDeserializer}
 import com.fasterxml.jackson.core.{JsonTokenId, JsonToken, JsonParser}
 import collection.mutable
-import org.json4s._
-import org.json4s.JsonAST.JField
+import com.tookitaki.shaded.org.json4s._
+import com.tookitaki.shaded.org.json4s.JsonAST.JField
 
 import scala.annotation.switch
 

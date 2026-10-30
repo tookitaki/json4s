@@ -10,7 +10,7 @@
 //
 // -----------------------------------------------------------------------------
 
-package org.json4s.scalap
+package com.tookitaki.shaded.org.json4s.scalap
 
 import scala.annotation.tailrec
 
@@ -87,7 +87,7 @@ trait Rules {
  */
 trait StateRules {
   type S
-  type Rule[+A, +X] = org.json4s.scalap.Rule[S, S, A, X]
+  type Rule[+A, +X] = com.tookitaki.shaded.org.json4s.scalap.Rule[S, S, A, X]
 
   val factory: Rules
   import factory._

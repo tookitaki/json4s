@@ -1,4 +1,4 @@
-package org.json4s.scalaz
+package com.tookitaki.shaded.org.json4s.scalaz
 
 import scalaz._
 import scalaz.syntax.apply0._
@@ -7,7 +7,7 @@ import scalaz.syntax.traverse._
 import scalaz.std.list._
 import scalaz.syntax.validation._
 import JsonScalaz._
-import org.json4s._
+import com.tookitaki.shaded.org.json4s._
 
 import org.scalatest.wordspec.AnyWordSpec
 

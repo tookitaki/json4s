@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 import org.scalatest.wordspec.AnyWordSpec
-import org.json4s.MonadicJValue._
+import com.tookitaki.shaded.org.json4s.MonadicJValue._
 
 abstract class LottoExample[T](mod: String) extends AnyWordSpec with JsonMethods[T] {
   import LottoExample._

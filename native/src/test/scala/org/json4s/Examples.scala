@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
-import org.json4s.prefs.EmptyValueStrategy
+import com.tookitaki.shaded.org.json4s.prefs.EmptyValueStrategy
 import org.scalatest.wordspec.AnyWordSpec
-import org.json4s.native.Document
+import com.tookitaki.shaded.org.json4s.native.Document
 
 class NativeExamples extends Examples[Document]("Native") with native.JsonMethods {
   import JsonDSL._

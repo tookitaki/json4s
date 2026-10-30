@@ -1,13 +1,13 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 package jackson
 
 import com.fasterxml.jackson.databind._
 import com.fasterxml.jackson.databind.DeserializationFeature.{USE_BIG_DECIMAL_FOR_FLOATS, USE_BIG_INTEGER_FOR_INTS}
 import com.fasterxml.jackson.core.json._
 import scala.util.control.Exception.allCatch
-import org.json4s.prefs.EmptyValueStrategy
+import com.tookitaki.shaded.org.json4s.prefs.EmptyValueStrategy
 
-trait JsonMethods extends org.json4s.JsonMethods[JValue] {
+trait JsonMethods extends com.tookitaki.shaded.org.json4s.JsonMethods[JValue] {
 
   private[this] lazy val _defaultMapper = {
     val m = new ObjectMapper()

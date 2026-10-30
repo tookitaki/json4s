@@ -1,8 +1,8 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 import java.util.Locale.ENGLISH
 import scala.annotation.tailrec
-import org.json4s.JsonAST.JField
+import com.tookitaki.shaded.org.json4s.JsonAST.JField
 
 object MonadicJValue {
 
@@ -437,27 +437,27 @@ class MonadicJValue(private val jv: JValue) extends AnyVal {
   }
 
   /**
-   * Camelize all the keys in this org.json4s.JValue
+   * Camelize all the keys in this com.tookitaki.shaded.org.json4s.JValue
    */
   def camelizeKeys: JValue = rewriteJsonAST(this.camelize)
 
   /**
-   * Pascalize all the keys in this org.json4s.JValue
+   * Pascalize all the keys in this com.tookitaki.shaded.org.json4s.JValue
    */
   def pascalizeKeys: JValue = rewriteJsonAST(this.pascalize)
 
   /**
-   * Underscore all the keys in this org.json4s.JValue
+   * Underscore all the keys in this com.tookitaki.shaded.org.json4s.JValue
    */
   def snakizeKeys: JValue = rewriteJsonAST(this.underscore)
 
   /**
-   * Underscore the camel cased only keys in this [[org.json4s.JValue]]
+   * Underscore the camel cased only keys in this [[com.tookitaki.shaded.org.json4s.JValue]]
    */
   def underscoreCamelCaseKeysOnly = rewriteJsonAST(underscoreCamelCasesOnly)
 
   /**
-   * Underscore all the keys in this org.json4s.JValue
+   * Underscore all the keys in this com.tookitaki.shaded.org.json4s.JValue
    */
   def underscoreKeys: JValue = snakizeKeys
 
@@ -467,8 +467,8 @@ class MonadicJValue(private val jv: JValue) extends AnyVal {
     }
 
   /**
-   * Remove the org.json4s.JNothing and org.json4s.JNull from
-   * a org.json4s.JArray or org.json4s.JObject
+   * Remove the com.tookitaki.shaded.org.json4s.JNothing and com.tookitaki.shaded.org.json4s.JNull from
+   * a com.tookitaki.shaded.org.json4s.JArray or com.tookitaki.shaded.org.json4s.JObject
    */
   def noNulls = remove {
     case JNull | JNothing => true

@@ -10,7 +10,7 @@ object Dependencies {
     "org.joda" % "joda-convert" % "2.2.2"
   )
   lazy val jackson = Seq(
-    "com.fasterxml.jackson.core" % "jackson-databind" % "2.12.7"
+    "com.fasterxml.jackson.core" % "jackson-databind" % "2.15.3" // Tookitaki: >= 2.12.7.1 (CVE-2022-42003/42004)
   )
   lazy val scalaz_core = Def.setting(
     "org.scalaz" %%% "scalaz-core" % "7.3.8"

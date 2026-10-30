@@ -1,9 +1,9 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 package reflect
 
 import java.lang.reflect.{AccessibleObject, Type, Constructor, Method}
 
-import org.json4s.MappingException
+import com.tookitaki.shaded.org.json4s.MappingException
 
 /**
  * This class is intended as a workaround until we are able to use Java 8's java.lang.reflect.Executable class.

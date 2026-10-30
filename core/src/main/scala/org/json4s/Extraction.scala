@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 import java.lang.{
   Boolean => JavaBoolean,
@@ -29,9 +29,9 @@ import java.math.{BigDecimal => JavaBigDecimal, BigInteger => JavaBigInteger}
 import java.sql.Timestamp
 import java.util.Date
 
-import org.json4s
-import org.json4s.prefs.ExtractionNullStrategy
-import org.json4s.reflect._
+import com.tookitaki.shaded.org.json4s
+import com.tookitaki.shaded.org.json4s.prefs.ExtractionNullStrategy
+import com.tookitaki.shaded.org.json4s.reflect._
 
 import scala.collection.JavaConverters._
 import scala.collection.mutable
@@ -48,7 +48,7 @@ object Extraction {
 
   /**
    * Extract a case class from JSON.
-   * @see org.json4s.JsonAST.JValue#extract
+   * @see com.tookitaki.shaded.org.json4s.JsonAST.JValue#extract
    * @throws MappingException is thrown if extraction fails
    */
   def extract[A](json: JValue)(implicit formats: Formats, mf: Manifest[A]): A = {
@@ -63,7 +63,7 @@ object Extraction {
 
   /**
    * Extract a case class from JSON.
-   * @see org.json4s.JsonAST.JValue#extract
+   * @see com.tookitaki.shaded.org.json4s.JsonAST.JValue#extract
    */
   def extractOpt[A](json: JValue)(implicit formats: Formats, mf: Manifest[A]): Option[A] =
     try { Option(extract(json)(formats, mf)) }
@@ -76,7 +76,7 @@ object Extraction {
    * <p>
    * Example:<pre>
    * case class Person(name: String, age: Int)
-   * implicit val formats: Formats = org.json4s.DefaultFormats
+   * implicit val formats: Formats = com.tookitaki.shaded.org.json4s.DefaultFormats
    * Extraction.decompose(Person("joe", 25)) == JObject(JField("age",JInt(25)) :: JField("name",JString("joe")) :: Nil)
    * </pre>
    */
@@ -88,7 +88,7 @@ object Extraction {
   /**
    * Load lazy val value
    *
-   * This is a fix for failed lazy val serialization from FieldSerializer (see org.json4s.native.LazyValBugs test).
+   * This is a fix for failed lazy val serialization from FieldSerializer (see com.tookitaki.shaded.org.json4s.native.LazyValBugs test).
    *
    * We do this by finding the hidden lazy method which will have same name as the lazy val name
    * but with suffix "\$lzycompute" (for scala v2.10+), then invoke the method if found, and return the value.
@@ -267,7 +267,7 @@ object Extraction {
    * <p>
    * Example:<pre>
    * case class Person(name: String, age: Int)
-   * implicit val formats: Formats = org.json4s.DefaultFormats
+   * implicit val formats: Formats = com.tookitaki.shaded.org.json4s.DefaultFormats
    * Extraction.decompose(Person("joe", 25)) == JObject(JField("age",JInt(25)) :: JField("name",JString("joe")) :: Nil)
    * </pre>
    */

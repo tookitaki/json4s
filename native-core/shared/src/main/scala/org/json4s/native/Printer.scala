@@ -1,4 +1,4 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 package native
 
 import scala.annotation.tailrec
@@ -11,7 +11,7 @@ import scala.annotation.tailrec
  * pretty(render(json))
  * </pre>
  *
- * @see org.json4s.JsonAST#render
+ * @see com.tookitaki.shaded.org.json4s.JsonAST#render
  */
 object Printer extends Printer
 trait Printer {

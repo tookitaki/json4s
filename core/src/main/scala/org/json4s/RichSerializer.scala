@@ -1,6 +1,6 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
-import org.json4s.reflect.ScalaType
+import com.tookitaki.shaded.org.json4s.reflect.ScalaType
 
 trait RichSerializer[A] {
   def deserialize(implicit format: Formats): PartialFunction[(ScalaType, JValue), A]

@@ -1,4 +1,4 @@
-package org.json4s.prefs
+package com.tookitaki.shaded.org.json4s.prefs
 
 object ExtractionNullStrategy {
 

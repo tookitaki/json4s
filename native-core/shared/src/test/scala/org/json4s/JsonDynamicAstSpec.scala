@@ -1,12 +1,12 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 import org.scalatest.wordspec.AnyWordSpec
-import org.json4s.MonadicJValue._
+import com.tookitaki.shaded.org.json4s.MonadicJValue._
 
 class JsonDynamicAstSpec extends AnyWordSpec {
 
-  import org.json4s.native.JsonMethods._
-  import org.json4s.DynamicJValue._
+  import com.tookitaki.shaded.org.json4s.native.JsonMethods._
+  import com.tookitaki.shaded.org.json4s.DynamicJValue._
 
   val tree = parse("""{"foo":{"bar": 3}}""")
 

@@ -1,8 +1,8 @@
-package org.json4s.jackson
+package com.tookitaki.shaded.org.json4s.jackson
 
 import org.scalatest.wordspec.AnyWordSpec
-import org.json4s.JObject
-import org.json4s.JInt
+import com.tookitaki.shaded.org.json4s.JObject
+import com.tookitaki.shaded.org.json4s.JInt
 
 class JacksonJsonMethodsSpec extends AnyWordSpec {
   "jackson.JsonMethods" should {

@@ -1,10 +1,10 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 package scalaz
 
 import _root_.scalaz._
 import Scalaz._
 import native.JsonMethods._
-import org.json4s.native.scalaz._
+import com.tookitaki.shaded.org.json4s.native.scalaz._
 import JsonScalaz._
 
 import org.scalatest.wordspec.AnyWordSpec

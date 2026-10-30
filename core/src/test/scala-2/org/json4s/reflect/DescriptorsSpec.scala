@@ -1,6 +1,6 @@
-package org.json4s.reflect
+package com.tookitaki.shaded.org.json4s.reflect
 
-import org.json4s.reflect.DescriptorsSpec.{Company, Citizen, Human}
+import com.tookitaki.shaded.org.json4s.reflect.DescriptorsSpec.{Company, Citizen, Human}
 import org.scalatest.wordspec.AnyWordSpec
 
 object DescriptorsSpec {

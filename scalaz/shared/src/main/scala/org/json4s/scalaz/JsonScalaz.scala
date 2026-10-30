@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 package scalaz
 
 import _root_.scalaz._
@@ -76,4 +76,4 @@ trait Types {
     JObject(fields.toList.map { case (n, v) => JField(n, v) })
 }
 
-object JsonScalaz extends Types with Lifting with Base with org.json4s.scalaz.Tuples
+object JsonScalaz extends Types with Lifting with Base with com.tookitaki.shaded.org.json4s.scalaz.Tuples

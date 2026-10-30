@@ -1,9 +1,9 @@
-package org.json4s.reflect
+package com.tookitaki.shaded.org.json4s.reflect
 
 import java.sql.Timestamp
 import java.util.Date
 
-import org.json4s.{DateTime, DefaultFormats, Formats, JInt, JObject, JString, MappingException, Obj, Objs, reflect}
+import com.tookitaki.shaded.org.json4s.{DateTime, DefaultFormats, Formats, JInt, JObject, JString, MappingException, Obj, Objs, reflect}
 import org.scalatest.Assertion
 import org.scalatest.wordspec.AnyWordSpec
 
@@ -130,7 +130,7 @@ class ReflectorSpec extends AnyWordSpec {
     val inst = new PathTypes.ContainsCaseClass
 
     "issue 507" in {
-      val result = org.json4s.Extraction.decompose(
+      val result = com.tookitaki.shaded.org.json4s.Extraction.decompose(
         GenericCaseClassWithCompanion(3)
       )
       assert(result == JObject(List(("value", JInt(3)), ("other", JString("Bar")))))

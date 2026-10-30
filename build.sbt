@@ -34,7 +34,7 @@ lazy val ast = crossProject(JVMPlatform, JSPlatform, NativePlatform)
       }
     },
     buildInfoKeys := Seq[BuildInfoKey](name, organization, version, scalaVersion, sbtVersion),
-    buildInfoPackage := "org.json4s",
+    buildInfoPackage := "com.tookitaki.shaded.org.json4s",
   )
   .enablePlugins(BuildInfoPlugin)
   .nativeSettings(
@@ -150,7 +150,7 @@ lazy val core = project
     json4sSettings(cross = false),
     libraryDependencies ++= Seq(Dependencies.paranamer),
     Test / console / initialCommands := """
-        |import org.json4s._
+        |import com.tookitaki.shaded.org.json4s._
         |import reflect._
       """.stripMargin,
   )
@@ -289,7 +289,7 @@ lazy val tests = project
     disableScala3, // TODO
     Test / console / initialCommands :=
       """
-        |import org.json4s._
+        |import com.tookitaki.shaded.org.json4s._
         |import reflect._
       """.stripMargin,
   )
@@ -300,3 +300,15 @@ lazy val tests = project
     ext,
     jackson
   )
+
+// Tookitaki: publish the JVM modules only (no Scala.js / Scala Native artifacts)
+addCommandAlias(
+  "publishJvm",
+  Seq("astJVM", "scalap", "xmlJVM", "core", "nativeCoreJVM", "native", "ext", "jacksonCore", "jackson", "scalazJVM")
+    .map(_ + "/publish").mkString(";", ";", "")
+)
+addCommandAlias(
+  "testJvm",
+  Seq("astJVM", "scalap", "xmlJVM", "core", "nativeCoreJVM", "native", "ext", "jacksonCore", "jackson", "scalazJVM", "tests")
+    .map(_ + "/test").mkString(";", ";", "")
+)

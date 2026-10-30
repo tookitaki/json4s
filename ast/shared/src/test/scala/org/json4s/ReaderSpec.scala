@@ -1,7 +1,7 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 import org.scalatest.wordspec.AnyWordSpec
-import org.json4s.DefaultJsonFormats._
+import com.tookitaki.shaded.org.json4s.DefaultJsonFormats._
 
 class ReaderSpec extends AnyWordSpec {
   "Reader" should {

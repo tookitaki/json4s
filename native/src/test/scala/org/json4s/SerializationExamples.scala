@@ -1,4 +1,4 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 import java.util.Date
 import org.scalatest.wordspec.AnyWordSpec
@@ -344,13 +344,13 @@ class FullTypeHintExamples extends TypeHintExamples {
   "Default recursive with type hints example" in {
     val pw = PlayerWithBird("zoltan")
     val ser = swrite(pw)
-    assert(ser == """{"name":"zoltan","bird":{"jsonClass":"org.json4s.Chicken","eggs":3}}""")
+    assert(ser == """{"name":"zoltan","bird":{"jsonClass":"com.tookitaki.shaded.org.json4s.Chicken","eggs":3}}""")
     assert(read[PlayerWithBird]("""{"name":"zoltan"}""") == pw)
   }
 
   "Deserialization succeeds when a field name matching typeHintFieldName exists" in {
-    val ser = """{"jsonClass":"org.json4s.Chicken"}"""
-    assert(read[NotTypeHint](ser) == NotTypeHint("org.json4s.Chicken"))
+    val ser = """{"jsonClass":"com.tookitaki.shaded.org.json4s.Chicken"}"""
+    assert(read[NotTypeHint](ser) == NotTypeHint("com.tookitaki.shaded.org.json4s.Chicken"))
   }
 }
 

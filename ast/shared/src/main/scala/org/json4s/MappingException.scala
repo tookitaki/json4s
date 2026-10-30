@@ -1,4 +1,4 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 class MappingException(val msg: String, val cause: Exception) extends Exception(msg, cause) {
   def this(msg: String) = this(msg, null)

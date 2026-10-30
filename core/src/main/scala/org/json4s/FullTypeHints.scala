@@ -1,6 +1,6 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
-import org.json4s.reflect.Reflector
+import com.tookitaki.shaded.org.json4s.reflect.Reflector
 
 /**
  * Use full class name as a type hint.

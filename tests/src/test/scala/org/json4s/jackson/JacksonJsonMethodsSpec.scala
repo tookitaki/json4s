@@ -1,12 +1,12 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 package jackson
 
 import org.scalatest.wordspec.AnyWordSpec
-import org.json4s.prefs.EmptyValueStrategy
+import com.tookitaki.shaded.org.json4s.prefs.EmptyValueStrategy
 
 class JacksonJsonMethodsSpec extends AnyWordSpec {
 
-  import org.json4s.JsonDSL._
+  import com.tookitaki.shaded.org.json4s.JsonDSL._
   import JsonMethods._
 
   "A JValue can be converted to a JsonNode." in {

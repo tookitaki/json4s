@@ -1,7 +1,7 @@
-package org.json4s.ext
+package com.tookitaki.shaded.org.json4s.ext
 
-import org.json4s.Serialization
+import com.tookitaki.shaded.org.json4s.Serialization
 
 class JacksonJavaDateTimeSerializerSpec extends JavaDateTimeSerializerSpec("Jackson") {
-  val s: Serialization = org.json4s.jackson.Serialization
+  val s: Serialization = com.tookitaki.shaded.org.json4s.jackson.Serialization
 }

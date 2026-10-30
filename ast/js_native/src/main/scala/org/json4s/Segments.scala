@@ -1,4 +1,4 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 private[json4s] object Segments {
   private[json4s] var segmentSize: Int = ParserUtil.defaultSegmentSize

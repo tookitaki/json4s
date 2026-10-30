@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 package native
 
 import scala.reflect.Manifest
@@ -28,7 +28,7 @@ import scala.reflect.Manifest
  * implicit val formats: Formats = Serialization.formats(hints)
  * </pre>
  *
- * @see org.json4s.TypeHints
+ * @see com.tookitaki.shaded.org.json4s.TypeHints
  */
 object Serialization extends Serialization {
   import java.io.{Reader, StringWriter, Writer}

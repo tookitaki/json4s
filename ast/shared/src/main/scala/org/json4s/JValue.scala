@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
-import org.json4s.JsonAST.JField
+import com.tookitaki.shaded.org.json4s.JsonAST.JField
 
 object JValue extends Merge.Mergeable
 
@@ -80,7 +80,7 @@ sealed abstract class JValue extends Diff.Diffable with Product with Serializabl
   }
 
   /**
-   * When this [[org.json4s.JValue]] is a [[org.json4s.JNothing]] or a [[org.json4s.JNull]], this method returns [[scala.None]]
+   * When this [[com.tookitaki.shaded.org.json4s.JValue]] is a [[com.tookitaki.shaded.org.json4s.JNothing]] or a [[com.tookitaki.shaded.org.json4s.JNull]], this method returns [[scala.None]]
    * When it has a value it will return [[scala.Some]]
    */
   def toOption: Option[JValue] = this match {
@@ -89,7 +89,7 @@ sealed abstract class JValue extends Diff.Diffable with Product with Serializabl
   }
 
   /**
-   * When this [[org.json4s.JValue]] is a [[org.json4s.JNothing]], this method returns [[scala.None]]
+   * When this [[com.tookitaki.shaded.org.json4s.JValue]] is a [[com.tookitaki.shaded.org.json4s.JNothing]], this method returns [[scala.None]]
    * When it has a value it will return [[scala.Some]]
    */
   def toSome: Option[JValue] = this match {

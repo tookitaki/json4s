@@ -1,4 +1,4 @@
-package org.json4s.native
+package com.tookitaki.shaded.org.json4s.native
 
 import java.io.Writer
 import scala.annotation.tailrec

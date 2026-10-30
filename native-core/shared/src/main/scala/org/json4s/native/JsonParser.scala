@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 package native
 
-import org.json4s.ParserUtil.{Buffer, parseDouble, ParseException}
-import org.json4s.JsonAST.JField
+import com.tookitaki.shaded.org.json4s.ParserUtil.{Buffer, parseDouble, ParseException}
+import com.tookitaki.shaded.org.json4s.JsonAST.JField
 
 /**
  * JSON parser.
@@ -123,14 +123,14 @@ object JsonParser {
   /**
    * Parse in pull parsing style.
    * Use <code>p.nextToken</code> to parse tokens one by one from a string.
-   * @see org.json4s.JsonParser.Token
+   * @see com.tookitaki.shaded.org.json4s.JsonParser.Token
    */
   def parse[A](s: String, p: Parser => A): A = parse(s, p, useBigDecimalForDouble = false)
 
   /**
    * Parse in pull parsing style.
    * Use <code>p.nextToken</code> to parse tokens one by one from a string.
-   * @see org.json4s.JsonParser.Token
+   * @see com.tookitaki.shaded.org.json4s.JsonParser.Token
    */
   def parse[A](s: String, p: Parser => A, useBigDecimalForDouble: Boolean): A =
     parse(new StringReader(s), p, useBigDecimalForDouble)
@@ -139,7 +139,7 @@ object JsonParser {
    * Parse in pull parsing style.
    * Use <code>p.nextToken</code> to parse tokens one by one from a stream.
    * The Reader must be closed when parsing is stopped.
-   * @see org.json4s.JsonParser.Token
+   * @see com.tookitaki.shaded.org.json4s.JsonParser.Token
    */
   def parse[A](s: Reader, p: Parser => A): A = parse(s, p, useBigDecimalForDouble = false)
 
@@ -147,7 +147,7 @@ object JsonParser {
    * Parse in pull parsing style.
    * Use <code>p.nextToken</code> to parse tokens one by one from a stream.
    * The Reader must be closed when parsing is stopped.
-   * @see org.json4s.JsonParser.Token
+   * @see com.tookitaki.shaded.org.json4s.JsonParser.Token
    */
   def parse[A](s: Reader, p: Parser => A, useBigDecimalForDouble: Boolean): A =
     parse(s, p, useBigDecimalForDouble, useBigIntForLong = true)
@@ -156,7 +156,7 @@ object JsonParser {
    * Parse in pull parsing style.
    * Use <code>p.nextToken</code> to parse tokens one by one from a stream.
    * The Reader must be closed when parsing is stopped.
-   * @see org.json4s.JsonParser.Token
+   * @see com.tookitaki.shaded.org.json4s.JsonParser.Token
    */
   def parse[A](s: Reader, p: Parser => A, useBigDecimalForDouble: Boolean, useBigIntForLong: Boolean): A =
     p(new Parser(new ParserUtil.Buffer(s, false), useBigDecimalForDouble, useBigIntForLong = useBigIntForLong))

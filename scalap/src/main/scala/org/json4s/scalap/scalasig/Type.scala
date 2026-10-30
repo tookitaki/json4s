@@ -1,4 +1,4 @@
-package org.json4s.scalap.scalasig
+package com.tookitaki.shaded.org.json4s.scalap.scalasig
 
 abstract class Type
 

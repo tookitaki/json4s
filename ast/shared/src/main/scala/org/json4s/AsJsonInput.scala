@@ -1,4 +1,4 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 trait AsJsonInput[A] { self =>
   def toJsonInput(a: A): JsonInput

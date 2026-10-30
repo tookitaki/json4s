@@ -1,4 +1,4 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 package reflect
 
 import java.lang.reflect.{Method, Modifier, ParameterizedType, Type, TypeVariable, WildcardType}

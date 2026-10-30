@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 import JsonAST._
 
 /**
  * Basic implicit conversions from primitive types into JSON.
  * Example:<pre>
- * import org.json4s.Implicits._
+ * import com.tookitaki.shaded.org.json4s.Implicits._
  * JObject(JField("name", "joe") :: Nil) == JObject(JField("name", JString("joe")) :: Nil)
  * </pre>
  */
@@ -57,7 +57,7 @@ trait Implicits {
 /**
  * A DSL to produce valid JSON.
  * Example:<pre>
- * import org.json4s.JsonDSL._
+ * import com.tookitaki.shaded.org.json4s.JsonDSL._
  * ("name", "joe") ~ ("age", 15) == JObject(JField("name",JString("joe")) :: JField("age",JInt(15)) :: Nil)
  * </pre>
  */

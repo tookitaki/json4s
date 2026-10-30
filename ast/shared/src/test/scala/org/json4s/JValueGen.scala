@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 import org.scalacheck._
 import Gen._
 import Arbitrary.arbitrary
-import org.json4s.JsonAST.JField
+import com.tookitaki.shaded.org.json4s.JsonAST.JField
 
 trait JValueGen {
   def genJValue: Gen[JValue] = frequency((5, genSimple), (1, delay(genArray)), (1, delay(genObject)))

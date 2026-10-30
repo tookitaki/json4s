@@ -1,4 +1,4 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 object TestUtils {
   def readFile(file: String): String = {

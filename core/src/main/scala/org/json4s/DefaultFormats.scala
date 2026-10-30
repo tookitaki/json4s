@@ -1,6 +1,6 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
-import org.json4s.prefs.{EmptyValueStrategy, ExtractionNullStrategy}
+import com.tookitaki.shaded.org.json4s.prefs.{EmptyValueStrategy, ExtractionNullStrategy}
 import java.lang.reflect.Type
 import java.util.{Date, TimeZone}
 

@@ -1,8 +1,8 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 package examples
 
 import java.util.Date
-import org.json4s._
+import com.tookitaki.shaded.org.json4s._
 import java.io._
 import com.fasterxml.jackson.databind.ObjectMapper
 import java.util.concurrent.atomic.AtomicLong
@@ -143,7 +143,7 @@ object SerBench extends Benchmark {
   }
 
   class ProjectSerializer
-    extends CustomSerializer[org.json4s.examples.Project](implicit formats =>
+    extends CustomSerializer[com.tookitaki.shaded.org.json4s.examples.Project](implicit formats =>
       (
         { case jv @ JObject(("name", JString(name)) :: ("startDate", JString(startDate)) :: _) =>
           val lang = (jv \ "lang") match {
@@ -151,7 +151,7 @@ object SerBench extends Benchmark {
             case lj =>
               Some(Language((lj \ "name").extract[String], (lj \ "version").extract[Double]))
           }
-          org.json4s.examples.Project(
+          com.tookitaki.shaded.org.json4s.examples.Project(
             name = name,
             startDate = formats.dateFormat.parse(startDate).get,
             lang = lang,
@@ -174,7 +174,7 @@ object SerBench extends Benchmark {
           )
         },
         {
-          case pr: org.json4s.examples.Project => {
+          case pr: com.tookitaki.shaded.org.json4s.examples.Project => {
             import JsonDSL._
 
             val lang = pr.lang map { l =>

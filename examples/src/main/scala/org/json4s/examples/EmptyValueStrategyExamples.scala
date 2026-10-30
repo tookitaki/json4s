@@ -1,4 +1,4 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 package examples
 
 case class EventAsCaseClass(eventType: String, duration: Option[Int] = None)

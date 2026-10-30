@@ -1,8 +1,8 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 package mongo
 
 import org.scalatest.wordspec.AnyWordSpec
-import org.json4s.{Extraction, DefaultFormats}
+import com.tookitaki.shaded.org.json4s.{Extraction, DefaultFormats}
 import java.util.Date
 
 object DateSerializerSpec {

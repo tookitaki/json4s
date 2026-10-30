@@ -1,10 +1,10 @@
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 
 class ReaderSyntax(private val jv: JValue) extends AnyVal {
 
   /**
    * Given that an implicit reader of type `A` is in scope
-   * It will deserialize the org.json4s.JValue to an object of type `A`
+   * It will deserialize the com.tookitaki.shaded.org.json4s.JValue to an object of type `A`
    *
    * Example:
    * {{{
@@ -22,7 +22,7 @@ class ReaderSyntax(private val jv: JValue) extends AnyVal {
 
   /**
    * Given that an implicit reader of type `A` is in scope
-   * It will deserialize the org.json4s.JValue to an object of type Option[`A`]
+   * It will deserialize the com.tookitaki.shaded.org.json4s.JValue to an object of type Option[`A`]
    *
    * Example:
    * {{{
@@ -40,7 +40,7 @@ class ReaderSyntax(private val jv: JValue) extends AnyVal {
 
   /**
    * Given that an implicit reader of type `A` is in scope
-   * It will deserialize the org.json4s.JValue to an object of type `A`
+   * It will deserialize the com.tookitaki.shaded.org.json4s.JValue to an object of type `A`
    * if an error occurs it will return the default value.
    *
    * Example:

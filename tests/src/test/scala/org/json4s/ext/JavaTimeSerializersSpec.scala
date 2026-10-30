@@ -1,8 +1,8 @@
-package org.json4s.ext
+package com.tookitaki.shaded.org.json4s.ext
 
 import java.time._
 
-import org.json4s._
+import com.tookitaki.shaded.org.json4s._
 import org.scalatest.wordspec.AnyWordSpec
 
 /**

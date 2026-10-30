@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.json4s
+package com.tookitaki.shaded.org.json4s
 package mongo
 
 import java.util.{Calendar, Date, GregorianCalendar, UUID}
